@@ -337,6 +337,7 @@ df_res %>%
         subtitle = strwrap("Synergism for eob > 0; antagonism for eob < 0", 10000),
         x = "Excess over Bliss (eob)", y = "Drug & dose")
 ggsave("eob_estimates.pdf", height = 5, width = 7)
+ggsave("eob_estimates.png", height = 5, width = 7)
 ```
 
 The black open circles denote mean estimates, the grey horizontal bars are the 95% Bayesian credible intervals, and the red vertical line denotes eob = 0. Drug combination synergism and antigonism are characterised by values eob > 0 and eob < 0, respectively.  
